@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:publishkit/regras_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -79,8 +80,10 @@ class _HomePageState extends State<HomePage> {
             _buildStepCard(
               context,
               onPressed: () {
-                // Navegar para página 1
-                // Navigator.pushNamed(context, '/pagina1');
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const RegrasPage()),
+                );
               },
             ),
             _buildStepCard(
