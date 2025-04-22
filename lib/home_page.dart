@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:publishkit/especificacoes_page.dart';
 import 'package:publishkit/regras_page.dart';
 
 class HomePage extends StatefulWidget {
@@ -95,7 +96,10 @@ class _HomePageState extends State<HomePage> {
             _buildStepCard(
               context,
               onPressed: () {
-                // Navegar para página 3
+                  Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const EspecificacoesPage()),
+                );
               },
             ),
             _buildStepCard(
