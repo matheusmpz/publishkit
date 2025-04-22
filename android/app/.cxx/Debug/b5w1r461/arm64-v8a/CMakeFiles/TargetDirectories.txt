@@ -1,0 +1,2 @@
+C:/MOBILE - 2/publishkit/android/app/.cxx/Debug/b5w1r461/arm64-v8a/CMakeFiles/edit_cache.dir
+C:/MOBILE - 2/publishkit/android/app/.cxx/Debug/b5w1r461/arm64-v8a/CMakeFiles/rebuild_cache.dir
