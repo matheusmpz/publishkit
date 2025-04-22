@@ -1,12 +1,9 @@
 import 'package:flutter/material.dart';
-<<<<<<< HEAD
 import 'package:publishkit/especificacoes_page.dart';
-=======
 import 'package:publishkit/cadastro_desenvolvedor.dart';
->>>>>>> 8eaea4dc44dec395385e8a76028c67a0612829fb
-import 'package:publishkit/regras_page.dart';
 import 'package:publishkit/menu_drawer.dart';
-
+import 'package:publishkit/regras_page.dart';
+ 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
@@ -18,7 +15,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: const MenuDrawer(), // Menu lateral (hambúrguer)
+      drawer: const MenuDrawer(), 
       appBar: AppBar(
         backgroundColor: Colors.white,
         iconTheme: const IconThemeData(color: Colors.black),

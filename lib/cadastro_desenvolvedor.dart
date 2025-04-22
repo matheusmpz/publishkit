@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:publishkit/menu_drawer.dart';
 
 void main() {
   runApp(const MyApp());
@@ -30,18 +31,25 @@ class CadastroDesenvolvedor extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      drawer: const Drawer(),
+      drawer: const MenuDrawer(),
       appBar: AppBar(
         backgroundColor: Colors.white,
-        elevation: 0,
         iconTheme: const IconThemeData(color: Colors.black),
-        centerTitle: true,
-        title: const Text(
-          'PublishKit',
-          style: TextStyle(
-            fontWeight: FontWeight.bold,
-            color: Colors.black,
-          ),
+        title: Row(
+          children: [
+            Image.asset(
+              'assets/imagem.png',
+              height: 50,
+            ),
+            const SizedBox(width: 10),
+            const Text(
+              'PublishKit',
+              style: TextStyle(
+                color: Colors.black,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ],
         ),
       ),
       body: SingleChildScrollView(
