@@ -26,101 +26,129 @@ class RegrasPage extends StatelessWidget {
           ],
         ),
       ),
-      body: const Padding(
-        padding: EdgeInsets.all(20.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            //Políticas da play store
-            Row(
-              children: [
-                Icon(Icons.policy, size: 30, color: Color(0xff00b1b7)),
-                SizedBox(width: 10),
-                Text(
-                  "Políticas da Play Store",
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+      body: Padding(
+        padding: const EdgeInsets.all(20.0),
+        child: SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              //Políticas da play store
+              const Row(
+                children: [
+                  Icon(Icons.policy, size: 30, color: Color(0xff00b1b7)),
+                  SizedBox(width: 10),
+                  Text(
+                    "Políticas da Play Store",
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                  ),
+                ],
+              ),
+              const SizedBox(
+                height: 15,
+              ),
+              const Text(
+                  "Aplicativos devem seguir as Políticas do Programa para Desenvolvedores do Google Play como:"),
+              const Text(
+                  "Proibições comuns: conteúdo sexual explícito, discurso de ódio, malware, coleta indevida de dados, etc."),
+              Center(
+                child: Image.asset(
+                  'assets/rules.png',
+                  height: 300,
                 ),
-              ],
-            ),
-            SizedBox(
-              height: 15,
-            ),
-            Text(
-                "Aplicativos devem seguir as Políticas do Programa para Desenvolvedores do Google Play como:"),
-            Text(
-                "Proibições comuns: conteúdo sexual explícito, discurso de ódio, malware, coleta indevida de dados, etc."),
+              ),
 
-            SizedBox(
-              height: 20,
-            ),
-            //privacidade e legislação
-            Row(
-              children: [
-                Icon(Icons.privacy_tip, size: 30, color: Color(0xff00b1b7)),
-                SizedBox(width: 10),
-                Text(
-                  "Privacidade e Legislação",
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+              const SizedBox(
+                height: 20,
+              ),
+              //privacidade e legislação
+              const Row(
+                children: [
+                  Icon(Icons.privacy_tip, size: 30, color: Color(0xff00b1b7)),
+                  SizedBox(width: 10),
+                  Text(
+                    "Privacidade e Legislação",
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                  ),
+                ],
+              ),
+              const SizedBox(
+                height: 15,
+              ),
+
+              const Text(
+                  "Política de Privacidade obrigatória (especialmente se coleta dados pessoais"),
+
+              const Text(
+                  "Conformidade com a GDPR (Europa), LGPD (Brasil), COPPA (EUA, para apps infantis), etc."),
+
+              Center(
+                child: Image.asset(
+                  'assets/privacy.png',
+                  height: 300,
                 ),
-              ],
-            ),
-            SizedBox(
-              height: 15,
-            ),
+              ),
 
-            Text(
-                "Política de Privacidade obrigatória (especialmente se coleta dados pessoais"),
+              const SizedBox(
+                height: 20,
+              ),
 
-            Text(
-                "Conformidade com a GDPR (Europa), LGPD (Brasil), COPPA (EUA, para apps infantis), etc."),
+              const Row(
+                children: [
+                  Icon(Icons.child_care, size: 30, color: Color(0xff00b1b7)),
+                  SizedBox(width: 10),
+                  Text(
+                    "Classificação Indicativa",
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                  ),
+                ],
+              ),
+              const SizedBox(
+                height: 15,
+              ),
 
-            SizedBox(
-              height: 20,
-            ),
+              const Text(
+                  "Obrigatório usar a ferramenta de classificação da Play Store (IARC) para definir a faixa etária apropriada."),
 
-            Row(
-              children: [
-                Icon(Icons.child_care, size: 30, color: Color(0xff00b1b7)),
-                SizedBox(width: 10),
-                Text(
-                  "Classificação Indicativa",
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+              Center(
+                child: Image.asset(
+                  'assets/familia.png',
+                  height: 240,
                 ),
-              ],
-            ),
-            SizedBox(
-              height: 15,
-            ),
+              ),
+              const SizedBox(
+                height: 20,
+              ),
 
-            Text(
-                "Obrigatório usar a ferramenta de classificação da Play Store (IARC) para definir a faixa etária apropriada."),
+              const Row(
+                children: [
+                  Icon(Icons.security, size: 30, color: Color(0xff00b1b7)),
+                  SizedBox(width: 10),
+                  Text(
+                    "Permissões",
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                  ),
+                ],
+              ),
+              const SizedBox(
+                height: 15,
+              ),
+              const Text(
+                  "Apenas solicitar permissões estritamente necessárias."),
 
-            SizedBox(
-              height: 20,
-            ),
+              const Text(
+                  "Permissões sensíveis (como localização em segundo plano, câmera, microfone) são avaliadas com rigor."),
 
-            Row(
-              children: [
-                Icon(Icons.security, size: 30, color: Color(0xff00b1b7)),
-                SizedBox(width: 10),
-                Text(
-                  "Permissões",
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+              Center(
+                child: Image.asset(
+                  'assets/solicitates.png',
+                  height: 300,
                 ),
-              ],
-            ),
-            SizedBox(
-              height: 15,
-            ),
-            Text("Apenas solicitar permissões estritamente necessárias."),
-
-            Text(
-                "Permissões sensíveis (como localização em segundo plano, câmera, microfone) são avaliadas com rigor."),
-
-            SizedBox(
-              height: 20,
-            ),
-          ],
+              ),
+              const SizedBox(
+                height: 20,
+              ),
+            ],
+          ),
         ),
       ),
     );

@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
 import 'package:publishkit/especificacoes_page.dart';
+=======
+import 'package:publishkit/cadastro_desenvolvedor.dart';
+>>>>>>> 8eaea4dc44dec395385e8a76028c67a0612829fb
 import 'package:publishkit/regras_page.dart';
 
 class HomePage extends StatefulWidget {
@@ -90,7 +94,10 @@ class _HomePageState extends State<HomePage> {
             _buildStepCard(
               context,
               onPressed: () {
-                // Navegar para página 2
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const CadastroDesenvolvedor()));
               },
             ),
             _buildStepCard(
